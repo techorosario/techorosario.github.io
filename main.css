@@ -83,7 +83,7 @@ label {
     min-height: 12%;
     z-index: 2;
     background: white;
-
+    overflow-x: hidden;
 }
 
 /* This is the class used for the main content headers (<h2>) */
