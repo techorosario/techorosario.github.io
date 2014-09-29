@@ -255,3 +255,8 @@ margin-left:1em;
 .icon {
     font-size: 150px;
 }
+
+.button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+}
+
