@@ -256,7 +256,8 @@ margin-left:1em;
     font-size: 150px;
 }
 
-.button-warning {
+.warning {
             background: rgb(223, 117, 20); /* this is an orange */
+	color: #000;
 }
 
