@@ -21,8 +21,9 @@
     <!--[if gt IE 8]><!-->
        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
     <!--<![endif]-->
-    
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="crumbs.css">
+    <link rel="stylesheet" href="main.css">
+	
 
 </head>
 
@@ -48,13 +49,13 @@
 
     <div class="content" style="padding: 3em;">
       <div class="content">
-	<ul class="pure-paginator">
-		<li><a class="pure-button prev" href="inscripcion.html">&#171;</a></li>
-		<li><a class="pure-button" href="inscripcion.html">Inscribite</a></li>
-	    	<li><a class="pure-button pure-button-active" href="confirmacion.html">Confirmá</a></li>
-	    	<li><a class="pure-button" href="remera.html">Reserva</a></li>
-		<li><a class="pure-button next" href="remera.html">&#187;</a></li>
-	</ul>
+	<div id="crumbs">
+		<ul>
+			<li><a href="inscripcion.html">Inscribite</a></li>
+		    	<li><a class="activecrumb" href="confirmacion.html">Confirmá</a></li>
+		    	<li><a href="remera.html">Reservá</a></li>
+		</ul>
+	</div>
   <header class="post-header">
     <h2 class="content-head is-center">Confirmar inscripción</h2>
   </header>

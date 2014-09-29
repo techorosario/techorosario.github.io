@@ -22,7 +22,8 @@
        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
     <!--<![endif]-->
     
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="crumbs.css">
+    <link rel="stylesheet" href="main.css">
 
     <!--script src="pilote.js"></script-->
 
@@ -39,7 +40,7 @@
 
       <ul>
         
-          <li> <a href="/contacto.html">Contacto</a></li>
+          <li> <a href="contacto.html">Contacto</a></li>
         
       </ul>
 
@@ -50,12 +51,13 @@
 
     <div class="content" style="padding: 3em;">
       <div class="content">
-	<ul class="pure-paginator">
-		<li><a class="pure-button pure-button-active" href="inscripcion.html">Inscribite</a></li>
-	    	<li><a class="pure-button" href="confirmacion.html">Confirmá</a></li>
-	    	<li><a class="pure-button" href="remera.html">Reservá</a></li>
-		<li><a class="pure-button next" href="confirmacion.html">&#187;</a></li>
-	</ul>
+	<div id="crumbs">
+		<ul>
+			<li><a class="activecrumb" href="inscripcion.html">Inscribite</a></li>
+		    	<li><a href="confirmacion.html">Confirmá</a></li>
+		    	<li><a href="remera.html">Reservá</a></li>
+		</ul>
+	</div>
   <header class="post-header">
     <h2 class="content-head is-center">Inscripción</h2>
   </header>
