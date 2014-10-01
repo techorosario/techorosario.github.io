@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div id="crumbs">
+	<ul>
+		{% for apage in site.pages %}
+		{% if apage.paso_inscr %}
+		{% if apage.title == page.title %}
+		<li><a class="activecrumb"  href="{{ apage.url | prepend: site.baseurl }}">{{ apage.title }}</a></li>
+		{% elsif apage.title %}
+		<li><a href="{{ apage.url | prepend: site.baseurl }}">{{ apage.title }}</a></li>
+		{% endif %}
+		{% endif %}
+		{% endfor %}
+	</ul>
+</div>
+<header class="post-header">
+    <h2 class="content-head is-center">{{ page.title }}</h2>
+</header>
+{{ content }}

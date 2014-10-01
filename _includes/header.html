@@ -1,0 +1,20 @@
+<div class="header">
+
+  <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+
+    <a class="pure-menu-heading" href="{{ site.baseurl }}/">TECHO | Rosario</a>
+
+      <ul>
+	  {% for page in site.pages %}
+	  {% if page.paso_inscr %}
+	  {% else %}
+          {% if page.title %}
+          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% endif %}
+	  {% endif %}
+          {% endfor %}
+      </ul>
+
+  </div>
+
+</div>
