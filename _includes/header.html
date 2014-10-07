@@ -8,11 +8,14 @@
 	  {% for page in site.pages %}
 	  {% if page.paso_inscr %}
 	  {% else %}
-          {% if page.title %}
-          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% if page.nomemu %}
+          {% else %}
+          	{% if page.title %}
+         	 <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          	{% endif %}
           {% endif %}
 	  {% endif %}
-          {% endfor %}
+      {% endfor %}
       </ul>
 
   </div>
